@@ -1,4 +1,4 @@
-# Brazilian e-commerce -  Olist SQL Analysis
+# Brazilian E-commerce -  Olist SQL Analysis
 
 ## Overview
 
