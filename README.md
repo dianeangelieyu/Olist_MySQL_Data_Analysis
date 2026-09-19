@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project analyzes the **Olist e-commerce dataset** using SQL to answer business questions related to customer spending, revenue performance, product categories, and customer purchasing behavior.
+This project analyzes the **Olist E-Commerce Dataset** using SQL to answer business questions related to customer spending, revenue performance, product categories, and customer purchasing behavior.
 
 The analysis focuses on:
 - Customer spending and segmentation
