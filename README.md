@@ -1,4 +1,4 @@
-# Olist SQL Analysis
+# Brazilian e-commerce -  Olist SQL Analysis
 
 ## Overview
 
@@ -94,41 +94,37 @@ Based on the types of insights produced by the analysis, the following business 
 ---
 
 ## Files
+The Project used eight (8) CSV files from the Brazilian E-Commerce Public Dataset by Olist.
+Each file contains specific attributes and a key identifier that links it to other tables for relational analysis.
 
-- `Query 1-8.sql` — Contains the eight (8) SQL queries used for the Olist analysis.
+| File Name                     | Description                                                   | Key Identifier                  |
+|-------------------------------|---------------------------------------------------------------|---------------------------------|
+| **olist_customers_dataset.csv**     | Customer location and unique identifier mappings              | customer_id                     |
+| **olist_geolocation_dataset.csv**   | Brazilian zip code prefixes with latitude, longitude, city, and state | geolocation_zip_code_prefix     |
+| **olist_order_items_dataset.csv**   | Item details per order, including seller, price, and shipping freight | order_id, order_item_id         |
+| **olist_order_payments_dataset.csv**| Payment methods, installment counts, and transaction values   | order_id                        |
+| **olist_order_reviews_dataset.csv** | Customer review scores, comments, and survey timestamps       | review_id, order_id             |
+| **olist_orders_dataset.csv**        | Core order records, purchase status, and delivery milestones  | order_id                        |
+| **olist_products_dataset.csv**      | Product categories, dimensions, weights, and photo counts     | product_id                      |
+| **olist_sellers_dataset.csv**       | Seller locations and unique identifier details                | seller
+
+Below file corresponds to the query used to answer the eight (8) business questions analyzed in this project.  
+
 - `README.md` — Project documentation, business questions, analytical approach, and recommendations.
+  
+| File | Description |
+|------|-------------|
+| **Q1_Top_10_Customers_By_Spending.sql** | Identifies the highest-spending customers |
+| **Q2_Monthly_Revenue_Trend.sql** | Analyzes monthly revenue over time |
+| **Q3_Month_Over_Month_Revenue_Change.sql** | Calculates month-over-month revenue changes |
+| **Q4_Top_Revenue_Product_Categories.sql** | Identifies the highest-revenue product categories |
+| **Q5_Top_3_Products_Per_Category.sql** | Identifies the top 3 products within each category by revenue |
+| **Q6_Customer_Spend_Tiers.sql** | Segments customers into Low, Medium, and High spending tiers |
+| **Q7_Repeat_vs_OneTime_Buyers.sql** | Compares repeat and one-time buyers using `customer_unique_id` |
+| **Q8_Top_Category_Revenue_Percentage.sql** | Calculates the top category’s percentage of total revenue |
 
-### Query Structure
 
-| Query | Analysis |
-|---|---|
-| Q1 | Top 10 customers by total spending |
-| Q2 | Monthly revenue trend |
-| Q3 | Month-over-month revenue change |
-| Q4 | Revenue by product category |
-| Q5 | Top 3 products by revenue within each category |
-| Q6 | Customer spend-tier segmentation |
-| Q7 | Repeat vs. one-time buyers |
-| Q8 | Top category's percentage of total revenue |
 
----
 
-## Dataset Tables Used
-
-The queries work with the following Olist tables:
-
-- `customers`
-- `orders`
-- `order_payments`
-- `order_items`
-- `products`
-
-These tables are joined to connect customer information, orders, payments, and product-level revenue.
-
----
-
-## Project Objective
-
-The objective of this project is to demonstrate how SQL can be used to transform raw e-commerce transaction data into actionable business insights.
 
 The analysis combines **customer analytics, revenue analysis, product performance, segmentation, and window-function techniques** to provide a structured view of Olist's e-commerce performance.
