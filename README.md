@@ -63,34 +63,39 @@ Based on the types of insights produced by the analysis, the following business 
 
 ### Tools
 - **MySQL**
-- SQL development environment / MySQL client
+- Github
 - Olist e-commerce dataset
 
 ### SQL Skills Demonstrated
 
-- `SELECT`, `WHERE`, `GROUP BY`, and `ORDER BY`
-- `INNER JOIN`
-- Aggregate functions such as `SUM()` and `COUNT()`
-- `ROUND()` for numerical formatting
-- `DATE_FORMAT()` for time-based analysis
-- Common Table Expressions (`WITH`)
-- Window functions:
-  - `LAG()`
-  - `ROW_NUMBER()`
-  - `NTILE()`
-  - `SUM() OVER()`
-- `CASE` expressions for customer segmentation
-- Ranking and partitioning
-- Revenue calculations
-- Customer-level aggregation
-- Time-series analysis
-- Percentage-of-total calculations
+**Core Querying & Data Retrieval**  
+- `SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`  
+- Relational joins (`JOIN`) across customers, orders, payments, products, and order_items  
+
+**Aggregation & Formatting**  
+- Aggregate functions: `SUM()`, `COUNT()`  
+- Numerical formatting with `ROUND()`  
+- Date handling with `DATE_FORMAT()` for time-based analysis  
+
+**Advanced Query Techniques**  
+- Common Table Expressions (`WITH`) for modular, multi-stage queries  
+- Window functions: `LAG()`, `ROW_NUMBER()`, `NTILE()`, `SUM() OVER()`  
+- Ranking and partitioning for product and customer analysis  
+
+**Segmentation & Profiling**  
+- `CASE` expressions for customer segmentation (Low/Medium/High tiers)  
+- Customer-level aggregation to identify spend tiers and repeat vs. one-time buyers  
+
+**Analytical Applications**  
+- Revenue calculations by customer, product, and category  
+- Time-series analysis of monthly and month-over-month revenue trends  
+- Percentage-of-total calculations to measure category concentration  
 
 ---
 
 ## Files
 
-- `Query 1-8.sql` — Contains the eight SQL queries used for the Olist analysis.
+- `Query 1-8.sql` — Contains the eight (8) SQL queries used for the Olist analysis.
 - `README.md` — Project documentation, business questions, analytical approach, and recommendations.
 
 ### Query Structure
